@@ -79,7 +79,7 @@ def path3():
         path1_1()
     elif secondPath == '4':
         path1()
-    elif
+    elif secondPath == '5':
         path2()
     else:
         print()
@@ -98,10 +98,12 @@ def path3():
     print('Path #1: Forget the old woman. Enter the doors and speak with CHRONOS.')
     print("Path #2: Honor the woman's request. Help MOIRAE return home safely.")
     thirdPath = input("Which path would you like to take? (1/2): ")
-        if thirdPath == '1':
-            path3_1()
-        elif thirdPath == '2':
-            path3_2()
+    if thirdPath == '1':
+        path3_1()
+    elif thirdPath == '2':
+        path3_2()
+
+        
 def path3_1():
     print()
     print("You begin walking toward the doors, ignoring MOIRAE's request")
@@ -133,6 +135,8 @@ def path3_2():
     print("...You have learned everything I have to teach you...")
     print("...So you may finally be free...")
     print("...It's time to return.")
+    print()
+    print("Thanks for playing!!!")
 
 print()
 print()
