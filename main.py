@@ -21,16 +21,20 @@ def intro():
     print("Path #2: Explore the depths of the rear of the cave, into the darkness.")
     print("Path #3: Climb down the vines into a botomless hole in the ground.")
     print()
-    firstPath = input("Which path will you choose? (1/2/3): ")
-    if firstPath == '1':
-        print()
-        path1()
-    elif firstPath == '2':
-        print()
-        path2()
-    elif firstPath == '3':
-        print()
-        path3()
+    
+    while func="That was not a Valid Path" or func="":
+        firstPath = input("Which path will you choose? (1/2/3): ")
+        pathChoice(firstPath)
+    
+def pathChoice:
+    switcher={
+		1:path1,
+		2:path2,
+		3:path3
+	}
+    func=switcher.get(i, lambda : "That was not a Valid Path")
+    return func()
+
 
 def path1():
     print()
